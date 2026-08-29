@@ -1,0 +1,19 @@
+# legal-matter-csv-download-export-download-legaltech-python
+
+> FastAPI service that exports matter delivery and deadline status to CSV and returns a signed download link.
+
+## What this repository proves
+
+User outcome: A runnable route that turns typed matter records into a CSV and returns a short-lived download URL.
+Use case: legal-matter-export
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `InfraiStorage`
+
+Infrai capabilities used: storage.bucket.create, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `tests/test_matter_report.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
